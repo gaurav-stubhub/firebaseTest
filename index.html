@@ -35,11 +35,13 @@
         <input type="submit" value="Download StubHub App" />
     </form>
  
+    <script>
     <!-- button to Open App to specific screen for existing app users -->
     var query = window.location.search.substring(1);
     var vars = query.split("?");
     var url = "stubhub://" + vars[1];
-
+    </script>
+    
     <form action=url target="_blank">
         <input type="submit" value="Open App" />
     </form>

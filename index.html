@@ -21,6 +21,7 @@
                   var query = window.location.search.substring(1);
                   var vars = query.split("?");
                   var url = "stubhub://" + vars[1];
+                  console.log(url);
                     window.location = url;
                 <!-- Download URL (MAT link) for new users to download the app -->
                     setTimeout("window.location = 'https://itunes.apple.com/us/app/stubhub-sports-concert-theatre/id366562751?mt%3D8';", 1000);
@@ -40,6 +41,7 @@
     var query = window.location.search.substring(1);
     var vars = query.split("?");
     var url = "stubhub://" + vars[1];
+    console.log("button url" + url)
     </script>
     
     <form action=url target="_blank">
